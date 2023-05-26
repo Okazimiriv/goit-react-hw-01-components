@@ -1,11 +1,11 @@
 // import React from "react";
-import Profile from './components/Profile';
-// import Statistics from "./components/Statistics/Statistics";
-import Transactions from "./components/Transactions";
+import Profile from 'components/Profile/Profile';
+import Statistics from 'components/Statistics/Statistics';
+import Transactions from 'components/Transactions/Transactions';
 
 import user from './data/user.json';
-// import statisticalData from './data/statistic-data.json';
-import transactions from "./data/transactions.json";
+import statisticData from './data/statistic-data.json';
+import transactions from './data/transactions.json';
 
 
 export const App = () => {
@@ -15,7 +15,7 @@ export const App = () => {
         height: '100vh',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'center',        
         fontSize: 40,
         color: '#010101'
       }}
@@ -28,7 +28,7 @@ export const App = () => {
       avatar={user.avatar}
       stats={user.stats}
       />
-      {/* <Statistics title="Upload Stats" stats={data} /> */}
+      <Statistics title="Upload Stats" stats={statisticData} />
       <Transactions items={transactions} />      
     </div>
   );
