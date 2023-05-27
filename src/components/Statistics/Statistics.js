@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
+import styles from 'components/Statistics/Statistic.module.css';
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section class="statistics">
-      {title && <h2 class="title">Upload stats</h2>}
+    <section className={styles.statistics}>
+      {title && <h2 className={styles.title}>Upload stats</h2>}
 
-      <ul class="stat-list">
+      <ul className={styles.statList}>
         {stats.map(stat => (
-          <li key={stat.id} class="item">
-            <span class="label">{stat.label}</span>
-            <span class="percentage">{stat.percentage + '%'}</span>
+          <li key={stat.id} className={styles.item}>
+            <span className={styles.label}>{stat.label}</span>
+            <span className={styles.percentage}>{stat.percentage + '%'}</span>
           </li>
         ))}
       </ul>
@@ -17,7 +18,7 @@ const Statistics = ({ title, stats }) => {
   );
 };
 
-Statistics.PropTypes = {
+Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
