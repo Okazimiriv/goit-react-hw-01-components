@@ -1,9 +1,9 @@
 // import React from "react";
-import Profile from 'components/Profile/Profile';
-import Statistics from 'components/Statistics/Statistics';
-import FriendList from 'components/FriendList/FriendList';
-// import FriendListItem from 'components/FriendListItem/FriendListItem';
-import Transactions from 'components/Transactions/Transactions';
+import Profile from 'components/Profile';
+import Statistics from 'components/Statistics';
+import FriendList from 'components/FriendList';
+// import FriendListItem from 'components/FriendListItem';
+import Transactions from 'components/Transactions';
 
 import user from './data/user.json';
 import statisticData from './data/statistic-data.json';
